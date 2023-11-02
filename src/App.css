@@ -177,7 +177,28 @@ footer{
   #card{
     padding-bottom: 40px;
     padding: 30px;
-    width: 300px;
+    width: 280px;
     height: 250px;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: white;
    }
+  #DOB{
+  padding: 10px;
+  width: 92%;
+  border-radius: 5px;
+  border: 1px solid #bbbbbb;
+  font-family: "Montserrat", sans-serif;
+}
+ .years{
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+  height: 30px;
+  padding: 30px 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  width: 16.5%;
+  margin-bottom: 10px;
+  text-align: center;
+}
 }
