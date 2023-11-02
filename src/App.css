@@ -1,38 +1,183 @@
-.App {
-  text-align: center;
+header{
+  background-color: white;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  opacity: 0.8;
+  display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header img{
+  width: 40px;
+  height: 40px;
+  margin-left: 40px;
+  margin-top: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#check{
+  margin-left: 10px;
+  font-weight: bold;
+  color: black;
+  width: fit-content;
+  font-family: "Sofia", sans-serif;
 }
-
-.App-header {
-  background-color: #282c34;
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
+  margin: 0;
+  flex: 1;
+  font-family: "Montserrat", sans-serif;
+  background-image: linear-gradient(25deg,#DCF6F4 50%,	#31918D 50%);
+ 
+}
+
+#card{
+ box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+ padding-bottom: 40px;
+ padding: 30px;
+ width: 370px;
+ height: 230px;
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ border-radius: 10px;
+ background-color: white;
+}
+
+#root{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 90%;
+}
+
+#form{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#DOB{
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #bbbbbb;
+  font-family: "Montserrat", sans-serif;
+}
+
+#DOB:focus{
+  border: 1px solid #800020;
+  outline: none;
+}
+
+#DOB::-webkit-calendar-picker-indicator{
+  
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+#calculate{
+  margin-top: 10px;
+  padding: 8px 5px;
+  border-radius: 5px;
+  background-color: 	#31918D;
+  border: none;
   color: white;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+#calculate:hover{
+  background-color:#DCF6F4;
+  color: black;
+  cursor: pointer;
+  border: 1px solid #31918D;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#disp{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.years{
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+  height: 40px;
+  padding: 30px 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  width: 18%;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.years:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+#card img{
+  height: 40px;
+  width: 40px;
+  align-self: center;
+  margin-bottom: 10px;
+  border: 2px solid #800020;
+  border-radius: 5px;
+}
+
+#card img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+
+p.years{
+  margin-top: -20px;
+}
+
+.label{
+margin-top: -10px;
+font-weight: bold;
+font-size: 28px;
+}
+
+.marker{
+  color: rgb(138, 138, 138);
+  margin-top: -21px;
+}
+
+footer{
+  background-color: #e3e3e3;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0px 0px;
+  text-align: center;
+  opacity: 0.8;
+  border-top: 2px solid #f1426e;
+  display: flex;
+  justify-content: center;
+}
+
+.git{
+  height: 20px;
+  width: 20px;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+/*media queries*/
+@media only screen and (max-width: 768px) {
+  #card{
+    padding-bottom: 40px;
+    padding: 30px;
+    width: 300px;
+    height: 250px;
+   }
 }
